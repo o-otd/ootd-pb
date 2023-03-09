@@ -1,0 +1,35 @@
+/* 
+  Design System 
+  ============================
+  피그마 컬러색상 | 퍼블리싱 컬러 정의
+  ============================
+  gray10      | --white
+  tint        | --main
+*/
+
+:root {
+  --main: #D6FF5C;
+  --white: #fff;
+  --gray1: #0C0A0A;
+  --gray2: #2C2C34;
+  --gray3: #3E3E47;
+  --gray4: #4D4D58;
+  --gray5: #62626C;
+  --gray6: #9E9EA3;
+  --gray7: #C3C3C6;
+  --gray8: #D9D9D9;
+  --gray9: #F2F2F7;
+  --white: #D9D9D9;
+  
+  /* Main Btn State */
+  --hover: #A2D900;
+  --disabled: #6A744D;
+
+  /* Error */
+  --error: #FF2D55;
+
+  /* Sub Btn State */
+  --subBtnDefault: var(--gray8);
+  --subBtnHover: var(--gray6);
+  --subBtnDisabled: var(--gray5);
+}
