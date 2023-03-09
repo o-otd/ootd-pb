@@ -1,0 +1,9 @@
+:root {
+	--borderRadius30: 0 0 30px 30px;
+	--borderRadius50: 50px; 
+}
+
+.inner-container { 
+	width: 100%;
+	padding: 0 16px;
+}

@@ -1,5 +1,6 @@
 @import url('./font.css');
 @import url('./colors.css');
+@import url('./role.css');
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -41,7 +42,9 @@ table {
 
 
 body {
-  font-weight: 400;
+  font-weight: 700;
+  background-color: var(--gray1);
+  color: var(--white);
 }
 
 fieldset,
@@ -52,6 +55,7 @@ input {
 button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .skip {
@@ -68,10 +72,6 @@ button {
 
 .skip:focus {
   top: 0px;
-}
-
-.en {
-  font-family: 'Roboto', sans-serif;
 }
 
 /* 대체텍스트 IR (SO 기법) */
