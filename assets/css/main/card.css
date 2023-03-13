@@ -27,3 +27,7 @@
 .card-header__util li button { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
 .card-header__util li button svg path { fill: var(--gray6); }
 
+.card-items { margin: 24px 0 0 16px; display: flex; }
+.card-items li + li { margin-left: 12px; }
+.card-items li span { font-size: 12px; font-weight: 700; color: var(--gray7); }
+.card-items li div { margin-top: 5px; width: 72px; height: 72px; background-color: var(--gray5); border-radius: var(--borderRadius20); }
