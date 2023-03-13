@@ -5,7 +5,7 @@ body {
 }
 
 
-.header { background-color: var(--gray3); height: 95px; border-radius: var(--borderRadius30); }
+.header { background-color: var(--gray3); height: 95px; border-radius: var(--headerRadius30); }
 .header-top {  display: flex; justify-content: space-between; align-items: center; height: 51px; }
 .header-logo { font-size: 16px; font-weight: 700; }
 

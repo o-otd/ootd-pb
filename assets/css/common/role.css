@@ -1,6 +1,7 @@
 :root {
-	--borderRadius30: 0 0 30px 30px;
+	--headerRadius30: 0 0 30px 30px;
 	--borderRadius50: 50px; 
+	--borderRadius30: 30px;
 }
 
 .inner-container { 
