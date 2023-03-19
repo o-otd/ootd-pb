@@ -1,0 +1,11 @@
+.look > h2 {
+	margin: 24px 20px 0 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white);
+}
+
+/* 추천 룩 슬라이드 메뉴 */
+.lookTab-swiper { margin-bottom: 17px; margin: 0 20px; }
+.lookTab-swiper ul li { width: auto; padding: 8px 0px; font-size: 14px; font-weight: 700; }
+.lookTab-swiper ul li.swiper-slide-thumb-active { color: var(--main); border-bottom: 1px solid var(--main); }

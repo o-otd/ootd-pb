@@ -58,8 +58,10 @@
 /* ***************************************************** */
 /* ***************************************************** */
 
+
 /* 오늘의 옷장카드 옷 리스트 */
 .card-items { margin: 24px 0 0 16px; display: flex; overflow-x: scroll; }
+.card-items::-webkit-scrollbar { display: none; }
 .card-items li + li { margin-left: 12px; }
 .card-items li span { font-size: 12px; font-weight: 700; color: var(--gray7); }
 .card-items li div { margin-top: 5px; width: 72px; height: 72px; background-color: var(--gray5); border-radius: var(--borderRadius20); }

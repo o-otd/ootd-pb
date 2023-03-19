@@ -40,6 +40,9 @@ table {
     -webkit-user-drag: none;  */
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   font-weight: 700;
