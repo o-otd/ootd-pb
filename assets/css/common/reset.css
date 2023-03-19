@@ -56,6 +56,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  text-align: start;
 }
 
 .skip {
