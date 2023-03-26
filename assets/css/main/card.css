@@ -1,9 +1,11 @@
 .card { 
 	margin-top: 4px;
+}
+
+.card-slide {
+	padding: 23px 0;
 	background-color: var(--gray3);
 	border-radius: var(--borderRadius30);
-	height: 200px;
-	padding: 23px 0;
 }
 
 .card-header { display: flex; justify-content: space-between; padding: 0 16px; }
@@ -23,16 +25,7 @@
 
 /* 오늘의 옷장카드 버튼 (좋아요, 북마크, 팔로우) */
 .card-header__util { display: flex; }
-.card-header__util li { width: 40px; height: 40px; background-color: var(--gray4); border-radius: var(--borderRadius50); }
 .card-header__util li + li { margin-left: 8px; }
-.card-header__util li button { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
-.card-header__util li button svg path { fill: var(--gray6); }
-
-/* 좋아요 버튼 활성화 표시 */
-.card-header__likes.active button svg path { fill: var(--tint1); }
-/* 북마크, 팔로우 버튼 활성화 표시 */
-.card-header__bookmark.active button svg path,
-.card-header__follow.active button svg path { fill: var(--main); }
 
 /* ***************************************************** */
 /* ***************************************************** */

@@ -1,2 +1,4 @@
 // Swiper
-export const cardSwiper = new Swiper(".card-swiper");
+export const cardSwiper = new Swiper(".card-swiper", {
+	spaceBetween: 20,
+});

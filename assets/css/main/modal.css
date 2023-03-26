@@ -57,27 +57,6 @@ body.card-modal .modal {
 
 .modal-top h4 { font-size: 16px; font-weight: 700; }
 
-/* ******************************* */
-/* ************ 좋아요 ************* */
-/* ******************************* */
-
-/* 좋아요 버튼 */
-.modal-likes {
-	width: 50px;
-	height: 50px;
-	background-color: var(--gray6);
-	border-radius: var(--borderRadius50);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.modal-likes svg { width: 28px; height: 28px; }
-.modal-likes svg path { fill: var(--gray8); }
-
-/* 좋아요 활성화 */
-.modal-likes.active svg path {
-	fill: var(--red2);
-}
 
 /* ******************************* */
 /* ************ 제품정보 ************ */
@@ -87,8 +66,8 @@ body.card-modal .modal {
 .modal-product > a { display: flex; align-items: center; margin-top: 5px; }
 .modal-product > a p { font-size: 18px; font-weight: 500; }
 
-.modal-product__form { position: absolute; display: flex; bottom: 16px; right: 16px; }
-.modal-product__form * { 
+.modal-product__link { position: absolute; display: flex; bottom: 16px; right: 16px; }
+.modal-product__link * { 
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,10 +79,10 @@ body.card-modal .modal {
 	font-size: 14px;
 	font-weight: 500;
 }
-.modal-product__form button + button { margin-left: 12px; }
+.modal-product__link a + a { margin-left: 12px; }
 
 
-.modal-product__image { 
+.modal-product__imageWrap { 
 	margin-top: 19px;
 	width: 272px; 
 	height: 272px;
@@ -112,14 +91,14 @@ body.card-modal .modal {
 }
 
 /* 아직 이미지가 없어서 일단 이렇게 대체하겠습니다. */
-.modal-product__image div {
+.modal-product__image {
 	width: 100%;
 	height: 100%;
 	background-color: var(--gray8);
 }
 
 /* 이미지 있을 때 사용할 CSS */
-.modal-product__image img { 
+.modal-product__imageWrap img { 
 	width: 100%;
 	height: 100%;
 	object-fit: cover;

@@ -46,11 +46,11 @@
 					<div class="modal-inner">
 						<div class="modal-top">
 							<h4>Shoes</h4>
-							<div class="modal-likes">
+							<button class="util-icon icon-m util-icon__likes">
 								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
 								</svg>
-							</div>
+							</button>
 						</div>
 						<!-- 옷 타입, 좋아요 버튼 -->
 
@@ -62,17 +62,15 @@
 									<path d="M10 7L15 12L10 17" stroke="#F2F2F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>	
 							</a>
-							<div class="modal-product__image">
-								<a href="#">
-									<div></div>
-									<!-- <img src="" alt="" /> -->
+							<div class="modal-product__imageWrap">
+								<div class="modal-product__image"></div>
+								<!-- <img src="" alt="" /> -->
 
-									<form class="modal-product__form">
-										<button class="modal-product__edit">수정</button>
-										<button class="modal-product__delete">삭제</button>
-									</form>
-									<!-- 작성자 모달창 -->
-								</a>
+								<div class="modal-product__link">
+									<a href="#" class="modal-product__edit">수정</a>
+									<a href="#" class="modal-product__delete">삭제</a>
+								</div>
+								<!-- 작성자 모달창 -->
 							</div>
 						</div>
 						<!-- 제품정보 -->
@@ -91,7 +89,7 @@
 		<section class="card">
 			<div class="card-swiper swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
+					<div class="swiper-slide card-slide">
 						<div class="card-header">
 							<div class="card-header__user">
 								<div class="card-header__profile"></div>
@@ -102,7 +100,7 @@
 							</div>
 							<ul class="card-header__util">
 								<li>
-									<button>
+									<button class="util-icon icon-s util-icon__likes">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
 										</svg>
@@ -111,7 +109,7 @@
 									</button>
 								</li>
 								<li>
-									<button>
+									<button class="util-icon icon-s util-icon__bookmark">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M15.8333 8.44401V3.44401C15.8333 2.52484 15.0858 1.77734 14.1667 1.77734H5.83332C4.91416 1.77734 4.16666 2.52484 4.16666 3.44401V18.334L9.99999 14.4457L15.8333 18.334V8.44401Z" fill="#4D4D58"/>
 										</svg>	
@@ -120,7 +118,7 @@
 									</button>
 								</li>
 								<li>
-									<button>
+									<button class="util-icon icon-s util-icon__follow">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M4.5 8.55273C4.5 10.5477 6.005 12.0527 8 12.0527C9.995 12.0527 11.5 10.5477 11.5 8.55273C11.5 6.55773 9.995 5.05273 8 5.05273C6.005 5.05273 4.5 6.55773 4.5 8.55273ZM19 8.00073H17V11.0007H14V13.0007H17V16.0007H19V13.0007H22V11.0007H19V8.00073ZM4 19.0007H14V18.0007C14 15.2437 11.757 13.0007 9 13.0007H7C4.243 13.0007 2 15.2437 2 18.0007V19.0007H4Z" fill="#4D4D58"/>
 										</svg>	
@@ -175,7 +173,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide card-slide">
 						<div class="card-header">
 							<div class="card-header__user">
 								<div class="card-header__profile"></div>
@@ -185,8 +183,8 @@
 								</div>
 							</div>
 							<ul class="card-header__util">
-								<li class="card-header__likes active">
-									<button>
+								<li>
+									<button class="util-icon icon-s util-icon__likes active">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
 										</svg>
@@ -194,8 +192,8 @@
 										<!-- 좋아요가 있으면 ? 좋아요 : 좋아요 취소 -->
 									</button>
 								</li>
-								<li class="card-header__bookmark active">
-									<button>
+								<li>
+									<button class="util-icon icon-s util-icon__bookmark active">
 										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M15.8333 8.44401V3.44401C15.8333 2.52484 15.0858 1.77734 14.1667 1.77734H5.83332C4.91416 1.77734 4.16666 2.52484 4.16666 3.44401V18.334L9.99999 14.4457L15.8333 18.334V8.44401Z" fill="#4D4D58"/>
 										</svg>	
@@ -203,8 +201,8 @@
 										<!-- 북마크가 있으면 ? 북마크 : 북마크 취소 -->
 									</button>
 								</li>
-								<li class="card-header__follow active">
-									<button>
+								<li>
+									<button class="util-icon icon-s util-icon__follow active">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M4.5 8.55273C4.5 10.5477 6.005 12.0527 8 12.0527C9.995 12.0527 11.5 10.5477 11.5 8.55273C11.5 6.55773 9.995 5.05273 8 5.05273C6.005 5.05273 4.5 6.55773 4.5 8.55273ZM19 8.00073H17V11.0007H14V13.0007H17V16.0007H19V13.0007H22V11.0007H19V8.00073ZM4 19.0007H14V18.0007C14 15.2437 11.757 13.0007 9 13.0007H7C4.243 13.0007 2 15.2437 2 18.0007V19.0007H4Z" fill="#4D4D58"/>
 										</svg>	
@@ -259,7 +257,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide card-slide">
 						<div class="card-header">
 							<div class="card-header__user">
 								<div class="card-header__profile"></div>
@@ -319,7 +317,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="swiper-slide">
+					<div class="swiper-slide card-slide">
 						<div class="card-header">
 							<div class="card-header__user">
 								<div class="card-header__profile"></div>
@@ -338,20 +336,140 @@
 		<section class="look">
 			<h2>오늘의 추천 look</h2>
 
-			<div class="lookTab-swiper">
-				<ul class="swiper-wrapper">
-					<li class="swiper-slide">베스트룩 👍</li>
-					<li class="swiper-slide">기온별 추천룩 🌤</li>
-					<li class="swiper-slide">TPO 추천룩 👔</li>
-					<li class="swiper-slide">활동성 추천룩 🏄</li>
+			<div class="lookTab">
+				<ul class="lookTab-lists">
+					<li class="lookTab-list active">베스트룩 👍</li>
+					<li class="lookTab-list"><a href="#">기온별 추천룩 🌤</a></li>
+					<li class="lookTab-list"><a href="#">TPO 추천룩 👔</a></li>
+					<li class="lookTab-list"><a href="#">활동성 추천룩 🏄</a></li>
 				</ul>
 			</div>
 			<div class="lookList-swiper">
 				<div class="swiper-wrapper">
-					<!-- <div class="swiper-slide">List</div>
-					<div class="swiper-slide">List</div>
-					<div class="swiper-slide">List</div>
-					<div class="swiper-slide">List</div> -->
+					<div class="swiper-slide look-slide">
+						<div class="lookList-inner">
+							<div class="look-category">
+								<div class="look-category__main">top</div>
+								<div class="look-category__sub">반소매셔츠</div>
+							</div>
+							<!-- 룩 카테고리 -->
+	
+							<div class="look-likes">
+								<button class="util-icon icon-m util-icon__likes active">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
+									</svg>
+									<span class="ir_so">좋아요</span>
+									<!-- 좋아요가 있으면 ? 좋아요 : 좋아요 취소 -->
+								</button>
+							</div>
+							<!-- 룩 좋아요 -->
+
+							<div class="look-imageWrap">
+								<div class="look-image"></div>
+							</div>
+						</div>
+
+						<div class="lookList-hover">
+							<span>KIIMUIR</span>
+							<span>투턱 버뮤다</span>
+							<span>애드 데님 쇼츠</span>
+						</div>
+						<!-- 룩 슬라이드 Hover -->
+					</div>
+					<div class="swiper-slide look-slide">
+						<div class="lookList-inner">
+							<div class="look-category">
+								<div class="look-category__main">top</div>
+								<div class="look-category__sub">반소매셔츠</div>
+							</div>
+							<!-- 룩 카테고리 -->
+	
+							<div class="look-likes">
+								<button class="util-icon icon-m util-icon__likes active">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
+									</svg>
+									<span class="ir_so">좋아요</span>
+									<!-- 좋아요가 있으면 ? 좋아요 : 좋아요 취소 -->
+								</button>
+							</div>
+							<!-- 룩 좋아요 -->
+
+							<div class="look-imageWrap">
+								<div class="look-image"></div>
+							</div>
+						</div>
+
+						<div class="lookList-hover">
+							<span>KIIMUIR</span>
+							<span>투턱 버뮤다</span>
+							<span>애드 데님 쇼츠</span>
+						</div>
+						<!-- 룩 슬라이드 Hover -->
+					</div>
+					<div class="swiper-slide look-slide">
+						<div class="lookList-inner">
+							<div class="look-category">
+								<div class="look-category__main">top</div>
+								<div class="look-category__sub">반소매셔츠</div>
+							</div>
+							<!-- 룩 카테고리 -->
+	
+							<div class="look-likes">
+								<button class="util-icon icon-m util-icon__likes active">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
+									</svg>
+									<span class="ir_so">좋아요</span>
+									<!-- 좋아요가 있으면 ? 좋아요 : 좋아요 취소 -->
+								</button>
+							</div>
+							<!-- 룩 좋아요 -->
+
+							<div class="look-imageWrap">
+								<div class="look-image"></div>
+							</div>
+						</div>
+
+						<div class="lookList-hover">
+							<span>KIIMUIR</span>
+							<span>투턱 버뮤다</span>
+							<span>애드 데님 쇼츠</span>
+						</div>
+						<!-- 룩 슬라이드 Hover -->
+					</div>
+					<div class="swiper-slide look-slide">
+						<div class="lookList-inner">
+							<div class="look-category">
+								<div class="look-category__main">top</div>
+								<div class="look-category__sub">반소매셔츠</div>
+							</div>
+							<!-- 룩 카테고리 -->
+	
+							<div class="look-likes">
+								<button class="util-icon icon-m util-icon__likes active">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" fill="#4D4D58"/>
+									</svg>
+									<span class="ir_so">좋아요</span>
+									<!-- 좋아요가 있으면 ? 좋아요 : 좋아요 취소 -->
+								</button>
+							</div>
+							<!-- 룩 좋아요 -->
+
+							<div class="look-imageWrap">
+								<div class="look-image"></div>
+							</div>
+						</div>
+
+						<div class="lookList-hover">
+							<span>KIIMUIR</span>
+							<span>투턱 버뮤다</span>
+							<span>애드 데님 쇼츠</span>
+						</div>
+						<!-- 룩 슬라이드 Hover -->
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,11 +1,79 @@
 .look > h2 {
-	margin: 24px 20px 0 20px;
+	margin: 24px 20px 18px 20px;
 	font-size: 16px;
 	font-weight: 600;
 	color: var(--white);
 }
 
 /* 추천 룩 슬라이드 메뉴 */
-.lookTab-swiper { margin-bottom: 17px; margin: 0 20px; }
-.lookTab-swiper ul li { width: auto; padding: 8px 0px; font-size: 14px; font-weight: 700; }
-.lookTab-swiper ul li.swiper-slide-thumb-active { color: var(--main); border-bottom: 1px solid var(--main); }
+.lookTab { overflow-x: scroll; }
+.lookTab::-webkit-scrollbar { display: none; }
+.lookTab-lists { display: flex; margin-bottom: 17px; margin: 0 20px; }
+.lookTab-list { font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.lookTab-list + .lookTab-list { margin-left: 37px; }
+.lookTab-list.active { color: var(--main); border-bottom: 1px solid var(--main); }
+
+/* 베스트룩 슬라이드 */
+.lookList-swiper {
+	margin-top: 16px;
+}
+
+.lookList-swiper .swiper-slide { 
+	width: 100%;
+	height: 360px;
+	background-color: var(--white);
+	border-radius: var(--borderRadius30);
+	overflow: hidden;
+	padding: 22px 20px;
+}
+
+.lookList-inner { position: relative; width: 100%; height: 100%; }
+
+.look-category { display: flex; align-items: center; position: absolute; left: 0; top: 0; color: var(--gray1); }
+.look-category__main { font-size: 17px; font-weight: 700; }
+.look-category__sub { padding: 6px 14px; background-color: var(--gray9); font-size: 14px; font-weight: 500; border-radius: var(--borderRadius50); margin-left: 14px; }
+.look-likes { position: absolute; right: 0; top: 0; }
+.look-likes .util-icon { background-color: var(--gray6); }
+.look-likes .util-icon path { fill: var(--gray8); }
+
+.look-imageWrap { 
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 286px;
+	height: 261px;
+}
+
+/* Image 대체 해야합니다. 일단은 레이아웃만 봐주세요. */
+.look-image {
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+}
+
+/* 슬라이드 호버시 상품명 크게 보이기. */
+.look-slide:hover .lookList-hover {
+	display: flex;
+}
+
+.lookList-hover {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	background: rgba(203, 255, 46, 0.78);
+	color: var(--gray1);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.lookList-hover span {
+	font-size: 45px;
+	font-weight: 700;
+	text-decoration: underline;
+}
