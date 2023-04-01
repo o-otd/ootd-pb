@@ -1,0 +1,40 @@
+.auth { margin-top: 24px; padding: 0 30px; }
+
+.logo { 
+	width: 36px;
+	height: 36px;
+	border-radius: var(--borderRadius7); 
+	background-color: var(--gray8);
+}
+
+.auth > h2 { 
+	font-size: 24px; 
+	font-weight: 700; 
+	margin-top: 25px; 
+}
+
+.auth > p {
+	margin-top: 22px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.auth > p a {
+	margin-left: 15px;
+	font-weight: 700;
+	color: var(--main);
+}
+
+.auth-find {
+	padding: 18px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--gray7);
+}
+
+.auth-info {
+	margin-top: 9px;
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--gray6);
+}

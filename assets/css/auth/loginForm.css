@@ -1,33 +1,6 @@
 @import url('../common/reset.css');
-
-.auth { margin-top: 24px; padding: 0 30px; }
-
-.logo { 
-	width: 36px;
-	height: 36px;
-	border-radius: var(--borderRadius7); 
-	background-color: var(--gray8);
-}
-
-.auth > h2 { 
-	font-size: 24px; 
-	font-weight: 700; 
-	margin-top: 25px; 
-}
-
-.auth-find {
-	padding: 18px 0;
-	font-size: 14px;
-	font-weight: 500;
-	color: var(--gray7);
-}
-
-.auth-info {
-	margin-top: 9px;
-	font-size: 13px;
-	font-weight: 500;
-	color: var(--gray6);
-}
+@import url('./common/layout.css');
+@import url('./common/validation.css');
 
 /* 이메일 로그인 */
 .auth-form {
@@ -88,31 +61,4 @@
 
 .auth-util .register * {
 	background-color: var(--gray8);
-}
-
-/* Validation Effect */
-.auth-form__input.valid * {
-	background-color: rgba(214, 255, 92, 0.28);
-	color: var(--white);
-}
-
-.auth-form__input.valid *::placeholder {
-	color: var(--white)
-}
-
-.auth-form__input.invalid p {
-	display: flex;
-	align-items: center;
-	font-size: 13px;
-	color: var(--error);
-	font-weight: 400;
-	margin-top: 12px;
-}
-
-.auth-form__input.invalid input {
-	border: 1px solid var(--error);
-}
-
-.auth-form__input.invalid svg {
-	margin-right: 7px;
 }

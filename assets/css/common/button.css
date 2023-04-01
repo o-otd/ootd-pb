@@ -48,3 +48,14 @@
 /* 북마크, 팔로우 버튼 활성화 표시 */
 .util-icon__bookmark.active path,
 .util-icon__follow.active path { fill: var(--main) !important; }
+
+
+/*****************************/
+/*************Modal***********/
+/*****************************/
+.modal-confirm {
+	padding: 10px 18px;
+	color: #1170FF;
+	border: 1px solid #1170FF;
+	border-radius: var(--borderRadius10);
+}
