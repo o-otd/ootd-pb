@@ -1,26 +1,31 @@
 @import url('../common/reset.css');
 @import url('./common/layout.css');
 
-/* 이메일 로그인 */
 .auth-form {
 	width: 100%;
 	padding: 22px 0 28px 0;
-	border-bottom: 1px solid var(--gray3);
 }
 
 .auth-form__input { 
 	width: 100%;
-	border-radius: var(--borderRadius15);
 	overflow: hidden;
+	position: relative;
 }
 
 .auth-form__input + .auth-form__input {
-	margin-top: 12px;
+	margin-top: 20px;
+}
+
+.auth-form__input label {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--gray8);
+	margin-bottom: 8px;
+	display: block;
 }
 
 .auth-form__input > div,
-.auth-form__input > button,
-.auth-form__input > a {
+.auth-form__input > button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -57,9 +62,16 @@
 	outline: none;
 }
 
-/* 로그인 및 회원가입 버튼 */
 .auth-util {
 	margin-top: 28px;
+}
+
+.auth-form__input button {
+	background-color: var(--main);
+}
+
+.auth-form__input.password > div + div {
+	margin-top: 8px;
 }
 
 .auth-util .auth-form__input * {
@@ -68,22 +80,13 @@
 	font-weight: 700;
 }
 
-.auth-form__input.login * {
-	background-color: var(--main);
-}
-
-.auth-form__input.register * {
-	background-color: var(--gray8);
-}
-
 /* Validation Effect */
-.auth-form__input.valid * {
-	background-color: rgba(214, 255, 92, 0.28);
-	color: var(--white);
+.auth-form__input.invalid input {
+	border: 1px solid var(--error);
 }
 
-.auth-form__input.valid *::placeholder {
-	color: var(--white)
+.auth-form__input.invalid .password-input {
+	border: none;
 }
 
 .auth-form__input.invalid p {
@@ -95,10 +98,23 @@
 	margin-top: 12px;
 }
 
+.auth-form__input.invalid .input-password {
+	border: none;
+}
+
 .auth-form__input.invalid input {
 	border: 1px solid var(--error);
 }
 
 .auth-form__input.invalid svg {
 	margin-right: 7px;
+}
+
+/* 회원가입 완료 활성화 및 비활성화 */
+.auth-form__submit.valid button {
+	background-color: var(--main);
+}
+
+.auth-form__submit.invalid button {
+	background-color: #6A744D;
 }
