@@ -1,24 +1,4 @@
 @import url('../../common/header.css');
 @import url('./lookTab.css');
-
-.category-swiper .swiper-slide {
-	width: 262px;
-	height: 84px;
-	border-radius: var(--borderRadius20);
-	background-color: var(--gray4);
-	font-size: 14px;
-	font-weight: 600;
-	padding: 11px 16px;
-	display: flex;
-	align-items: flex-end;
-}
-
-.category-swiper .swiper-slide.active {
-	background-color: var(--main);
-	font-size: 48px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 400;
-	color: var(--gray1);
-}
+@import url('./suggestion.css');
+@import url('./lookFeed.css');

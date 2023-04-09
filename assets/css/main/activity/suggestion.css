@@ -1,0 +1,45 @@
+.suggestion-category__swiper .swiper-slide {
+	width: 262px;
+	height: 84px;
+	border-radius: var(--borderRadius20);
+	background-color: var(--gray4);
+	font-size: 14px;
+	font-weight: 600;
+	padding: 11px 16px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.suggestion-category__swiper .swiper-slide.active {
+	background-color: var(--main);
+	font-size: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	color: var(--gray1);
+}
+
+
+.suggestion-lnb-swiper {
+	margin-top: 4px;
+}
+
+.suggestion-lnb-swiper .swiper-slide {
+	width: auto;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 18px;
+	background-color: var(--gray4);
+	border-radius: var(--borderRadius50);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.suggestion-lnb-swiper .swiper-slide.active {
+	background-color: var(--main);
+	font-weight: 700;
+	color: var(--gray1);
+}
