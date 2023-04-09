@@ -30,8 +30,10 @@
 }
 
 .auth-socialList a svg {
-	width: 24px;
-	height: 24px;
 	margin-right: 7px;
+}
+
+.auth-socialList__google a svg {
+	margin-left: 4px;
 }
 

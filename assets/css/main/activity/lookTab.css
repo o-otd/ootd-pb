@@ -1,0 +1,7 @@
+/* 추천 룩 슬라이드 메뉴 */
+.lookTab { overflow-x: scroll; margin: 14px 0; }
+.lookTab::-webkit-scrollbar { display: none; }
+.lookTab-lists { display: flex; margin-bottom: 17px; margin: 0 20px; }
+.lookTab-list { font-size: 14px; font-weight: 700; flex-shrink: 0; }
+.lookTab-list + .lookTab-list { margin-left: 37px; }
+.lookTab-list.active { color: var(--main); border-bottom: 1px solid var(--main); }

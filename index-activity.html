@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>홈 - 활동성 추천룩 🏄</title>
+	<link rel="stylesheet" href="./assets/css/main/activity/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="inner-container">
+			<div class="header-top">
+				<h1 class="header-logo"><a href="#">LOGO</a></h1>
+	
+				<ul class="header-util">
+					<li><button type="button"><img src="./assets/images/icon/search.svg" alt="검색"></button></li>
+					<li><button type="button"><img src="./assets/images/icon/notice.svg" alt="알림" /></button></li>
+				</ul>
+			</div>
+			<!-- Header Top -->
+	
+			<nav class="header-nav">
+				<ul class="header-nav__lists">
+					<li class="header-nav__list active"><a href="#">오늘의 옷장</a></li>
+					<li class="header-nav__list"><a href="#">일주일 옷장</a></li>
+					<li class="header-nav__list"><a href="#">컨펌</a></li>
+					<li class="header-nav__list"><a href="#">MY</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+	<!-- Header -->
+
+	<main>
+		<section class="lookTab">
+			<ul class="lookTab-lists">
+				<li class="lookTab-list">베스트룩 👍</li>
+				<li class="lookTab-list"><a href="#">기온별 추천룩 🌤</a></li>
+				<li class="lookTab-list"><a href="#">TPO 추천룩 👔</a></li>
+				<li class="lookTab-list active"><a href="#">활동성 추천룩 🏄</a></li>
+			</ul>
+		</section>
+
+		<section class="category">
+			<div class="swiper category-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide active">VACATION</div>
+					<div class="swiper-slide">수상레저</div>
+					<div class="swiper-slide">휴가</div>
+					<div class="swiper-slide">수상레저</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./assets/js/main/activity/mainSub.js" type="module"></script>
+</body>
+</html>
