@@ -1,0 +1,34 @@
+.bottom-sheet__colors ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 43px;
+	gap: 19px 22px;
+}
+
+.bottom-sheet__colors ul li {
+	text-align: center;
+}
+
+.color-shape {
+	width: 40px;
+	height: 40px;
+	border: 3px solid var(--gray7);
+	border-radius: 50%;
+	box-shadow: inset 1px 1px 11px #000000;
+}
+
+.color-name {
+	font-size: 13px;
+	color: var(--gray7);
+	font-weight: 400;
+	margin-top: 4px;
+	display: block;
+}
+
+.bottom-sheet__colors li.active .color-name {
+	color: var(--main);
+}
+
+.bottom-sheet__colors li.active .color-shape {
+	border: 3px solid var(--main);
+}

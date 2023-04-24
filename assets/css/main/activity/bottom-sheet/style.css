@@ -1,0 +1,21 @@
+.bottom-sheet__style ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 7px;
+}
+
+.bottom-sheet__style ul li {
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--gray9);
+	padding: 6px 12px;
+	background-color: var(--gray4);
+	border: 1px solid var(--gray5);
+	border-radius: var(--borderRadius50);
+}
+
+.bottom-sheet__style ul li.active {
+	color: var(--main);
+	border: 1px solid var(--main);
+}

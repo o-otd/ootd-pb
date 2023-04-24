@@ -2,3 +2,10 @@
 @import url('./lookTab.css');
 @import url('./suggestion.css');
 @import url('./lookFeed.css');
+/* Bottom Sheet */
+@import url('./bottomSheet.css');
+@import url('./bottom-sheet/gender.css');
+@import url('./bottom-sheet/style.css');
+@import url('./bottom-sheet/age.css');
+@import url('./bottom-sheet/colors.css');
+@import url('./bottom-sheet/height.css');

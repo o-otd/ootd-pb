@@ -1,0 +1,46 @@
+/* 성별 */
+.bottom-sheet__age {
+	padding: 0 16px;
+}
+
+.age-input {
+	display: flex;
+	align-items: center;
+	height: 48px;
+	border-bottom: 1px solid var(--gray4);
+}
+
+.age-input input {
+	position: relative;
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--gray4);
+	border-radius: var(--borderRadius50);
+}
+
+.age-input label { 
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: 8px;
+}
+
+
+.age-input input:checked {
+	width: 20px;
+	height: 20px;
+	background-color: var(--main);
+	border: none;
+}
+
+.age-input input:checked:after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: url('../../../../images/icon/check.svg') no-repeat center / cover;
+}
