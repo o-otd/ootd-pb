@@ -25,7 +25,23 @@
 
 /* 오늘의 옷장카드 버튼 (좋아요, 북마크, 팔로우) */
 .card-header__util { display: flex; }
+.card-header__util li { position: relative; }
 .card-header__util li + li { margin-left: 8px; }
+.card-header__util li .unflow { 
+	position: absolute;
+	padding: 8px 16px;
+	width: max-content;
+	color: var(--tint1);
+	font-size: 14px;
+	font-weight: 600;
+	background-color: var(--gray1);
+	border-radius: var(--borderRadius10);
+	right: 0;
+	top: calc(100% + 10px);
+	display: flex;
+	align-items: center;
+}
+.card-header__util li .unflow svg { margin-left: 10px; }
 
 /* ***************************************************** */
 /* ***************************************************** */
@@ -57,7 +73,16 @@
 .card-items::-webkit-scrollbar { display: none; }
 .card-items li + li { margin-left: 12px; }
 .card-items li span { font-size: 12px; font-weight: 700; color: var(--gray7); }
-.card-items li div { margin-top: 5px; width: 72px; height: 72px; background-color: var(--gray5); border-radius: var(--borderRadius20); }
+.card-items li div { 
+	margin-top: 5px; 
+	width: 72px; 
+	height: 72px;
+	background-color: var(--gray5); 
+	border-radius: var(--borderRadius20); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* 인기 사용자가 없을 때 */
 .card-items__none { 
