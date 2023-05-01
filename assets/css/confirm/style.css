@@ -1,0 +1,29 @@
+@import url('../common/header.css');
+
+.confirm-util {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 15px 25px;
+}
+
+.confirm-util button {
+	display: block;
+	height: 24px;
+}
+
+.confirm-util button + button {
+	margin-left: 24px;
+}
+
+.confirm-util__write { 
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--main);
+}
+
+/* Confirm list */
+
+.confirm-list__card {
+	border-radius: var(--borderRadius30);
+}
