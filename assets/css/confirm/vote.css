@@ -1,0 +1,68 @@
+/* ! Vote */
+.confirm-vote {
+	padding: 22px 16px;
+	background: var(--gray2);
+	border-radius: var(--borderRadius30);
+}
+
+.confirm-vote__info { 
+	display: flex; 
+	align-items: center;
+}
+
+.confirm-vote__info h5 {
+	font-size: 17px;
+	font-weight: 700;	
+	color: var(--gray8);
+}
+
+.confirm-vote__info svg { 
+	margin-right: 4px; 
+}
+
+.confirm-vote__date { 
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--gray9);
+	margin-left: 12px; 
+}
+
+.confirm-vote__date span { 
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--gray6);
+	margin-left: 4px;
+}
+
+.confirm-vote__list {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 44px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: 700;
+	border: 1px solid var(--gray8);
+	border-radius: var(--borderRadius10);
+}
+
+.confirm-vote__btns {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.confirm-vote__btns button + button {
+	margin-left: 20px;
+}
+
+.confirm-vote__submit {
+	color: var(--gray5);
+}
+
+.confirm-vote__result {
+	color: var(--gray8);
+}

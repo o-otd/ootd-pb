@@ -1,0 +1,26 @@
+/* Images Slider */
+.confirm-slider {
+	position: relative;
+}
+
+.confirm-slider__item {
+	width: 375px;
+	height: 375px;
+	overflow: hidden;
+	border-radius: var(--borderRadius30);
+}
+
+/* Swiper CSS */
+.confirm-slider .swiper-pagination {
+	top: auto;
+	bottom: 8px;
+}
+
+.confirm-slider .swiper-pagination-bullet-active {
+	background-color: var(--white);
+}
+
+.confirm-slider .swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+}

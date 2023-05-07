@@ -1,0 +1,60 @@
+/* Comments */
+.confirm-comments {
+	padding: 22px 16px;
+	background: var(--gray2);
+	border-radius: var(--borderRadius30);
+}
+
+.confirm-comments__info {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.confirm-comments__info span {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--gray5);
+}
+
+.confirm-comments__list {
+	margin-top: 11px;
+}
+
+.confirm-comments__item {
+	display: flex;
+	align-items: center;
+}
+
+.confirm-comments__profile {
+	width: 24px;
+	height: 24px;
+	background-color: var(--main);
+	border-radius: var(--borderRadius50);
+	overflow: hidden;
+}
+
+.confirm-comments__profile img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.confirm-comments__content {
+	width: calc(100% - 40px);
+	position: relative;
+	margin-left: 16px;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--gray8);
+}
+
+.confirm-comments__content:after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url('../../images/icon/confirm-comments-link.svg') no-repeat center / cover;
+	right: 0;
+}
