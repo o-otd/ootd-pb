@@ -1,4 +1,5 @@
 @import url('../common/header.css');
+@import url('./list.css');
 
 .confirm-util {
 	display: flex;
@@ -20,10 +21,4 @@
 	font-size: 14px;
 	font-weight: 700;
 	color: var(--main);
-}
-
-/* Confirm list */
-
-.confirm-list__card {
-	border-radius: var(--borderRadius30);
 }
