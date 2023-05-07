@@ -53,4 +53,11 @@
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--gray9);
+	line-height: 20px;
+}
+
+/* ! 본문 클릭 시 */
+.confirm-card__content.active {
+	white-space: initial;
+	text-overflow: initial;
 }

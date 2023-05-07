@@ -35,6 +35,8 @@
 }
 
 .confirm-vote__list {
+	position: relative;
+	overflow: hidden;
 	margin-top: 12px;
 	display: flex;
 	align-items: center;
@@ -45,6 +47,7 @@
 	font-weight: 700;
 	border: 1px solid var(--gray8);
 	border-radius: var(--borderRadius10);
+	z-index: 3;
 }
 
 .confirm-vote__btns {
@@ -59,10 +62,62 @@
 	margin-left: 20px;
 }
 
-.confirm-vote__submit {
-	color: var(--gray5);
+
+
+.confirm-vote__submit[disabled] { 
+	color: var(--gray5); 
+	cursor: not-allowed;
 }
 
-.confirm-vote__result {
+.confirm-vote__submit { 
+	color: var(--gray8); 
+	cursor: initial;
+}
+
+.confirm-vote__result { color: var(--gray8); }
+
+/* ! 투표할 때 */
+.confirm-vote__list.active {
+	color: var(--gray2);
+	background-color: var(--gray8);
+} 
+
+.confirm-vote__list.active svg {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+
+/* ! 투표 결과 */
+.confirm-vote__list--notSelected:after {
+	content: '';
+	position: absolute;
+	width: 12%;
+	background-color: var(--gray5);
+	height: 100%;
+	left: 0;
+	z-index: -1;
+}
+
+.confirm-vote__list--select:after {
+	content: '';
+	position: absolute;
+	width: 88%;
+	background-color: #87B207;
+	height: 100%;
+	left: 0;
+	z-index: -1;
+}
+
+.confirm-vote__list--result {
+	position: absolute;
+	right: 16px;
+	font-size: 12px;
+	font-weight: 400;
 	color: var(--gray8);
+}
+
+.confirm-vote__list--result span {
+	margin-left: 10px;
 }

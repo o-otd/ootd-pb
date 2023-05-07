@@ -16,3 +16,7 @@
 	object-fit: cover;
 	object-position: center;
 }
+
+.confirm-list__item + .confirm-list__item {
+	margin-top: 24px;
+}
