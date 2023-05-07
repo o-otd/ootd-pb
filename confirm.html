@@ -46,7 +46,7 @@
 				</svg>
 				<span class="ir_so">새로고침</span>
 			</button>
-			<button class="confirm-util__write">글쓰기</button>
+			<a href="#" class="confirm-util__write">글쓰기</a>
 		</div>
 
 		<section class="confirm-lists">
@@ -55,7 +55,7 @@
 					<div class="confirm-card">
 						<div class="confirm-card__info">
 							<div class="confirm-card__profile">
-								<img src="./assets/images/dummy-profile.png" alt="프로필 섬네일" />
+								<img src="./assets/images/dummy-profile.png" alt="프로필 섬네일" class="coverImage" />
 							</div>
 							<div>
 								<div class="confirm-card__nickname">CNVXCX</div>
@@ -71,9 +71,62 @@
 							급해요 꼭 투표부탁. 댓글로 다른 스타일 추천도 받습니다! 부탁!!!!!!!!!!
 						</p>
 					</div>
+					<form action="#" class="confirm-vote confirm-marginTop">
+						<div class="confirm-vote__info">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.3388 6.83849L13.1605 5.66016L9.16632 9.65432L7.25548 7.74349L6.07715 8.92182L9.16632 12.011L14.3388 6.83849Z" fill="#D9D9D9"/>
+								<path d="M16.667 1.66602H3.33366C2.41449 1.66602 1.66699 2.41352 1.66699 3.33268V18.3327L6.11116 14.9993H16.667C17.5862 14.9993 18.3337 14.2518 18.3337 13.3327V3.33268C18.3337 2.41352 17.5862 1.66602 16.667 1.66602ZM16.667 13.3327H5.55616L3.33366 14.9993V3.33268H16.667V13.3327Z" fill="#D9D9D9"/>
+							</svg>	
+							<h5>PICK</h5>
+							<div class="confirm-vote__date">
+								7일 남음 
+								<span>2022.11.27 ~ 2022.12.04</span>
+							</div>
+						</div>
+						<button type="button" class="confirm-vote__list">입고 나가요</button>
+						<button type="button" class="confirm-vote__list">다시 골라요</button>
+						<div class="confirm-vote__btns">
+							<button type="submit" class="confirm-vote__submit">투표하기</button>
+							<button type="button" class="confirm-vote__result">결과 확인</button>
+						</div>
+					</form>
+					<div class="confirm-slider confirm-images__swiper confirm-marginTop">
+						<ul class="confirm-slider__list swiper-wrapper">
+							<li class="confirm-slider__item swiper-slide">
+								<img src="./assets/images/confirm-img-dummy.png" alt="이미지 섬네일" />
+							</li>
+							<li class="confirm-slider__item swiper-slide">
+								<img src="./assets/images/confirm-img-dummy.png" alt="이미지 섬네일" />
+							</li>
+							<li class="confirm-slider__item swiper-slide">
+								<img src="./assets/images/confirm-img-dummy.png" alt="이미지 섬네일" />
+							</li>
+							<li class="confirm-slider__item swiper-slide">
+								<img src="./assets/images/confirm-img-dummy.png" alt="이미지 섬네일" />
+							</li>
+							<li class="confirm-slider__item swiper-slide">
+								<img src="./assets/images/confirm-img-dummy.png" alt="이미지 섬네일" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="confirm-comments confirm-marginTop">
+						<h5 class="confirm-comments__info">
+							댓글 <span>72</span>
+						</h5>
+						<ul class="confirm-comments__list">
+							<li class="confirm-comments__item">
+								<div class="confirm-comments__profile"></div>
+								<p class="confirm-comments__content">패턴이 너무 튀어요.</p>
+							</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</section>
 	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./assets/js/confirm/images.js"></script>
 </body>
 </html>

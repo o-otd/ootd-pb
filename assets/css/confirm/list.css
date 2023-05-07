@@ -1,54 +1,165 @@
-/* Confirm list */
-.confirm-card {
+
+
+/* ! Vote */
+.confirm-vote {
 	padding: 22px 16px;
 	background: var(--gray2);
 	border-radius: var(--borderRadius30);
 }
 
-.confirm-card__info {
-	display: flex;
-	padding-bottom: 12px;
-	border-bottom: 1px solid var(--gray5);
+.confirm-vote__info { 
+	display: flex; 
+	align-items: center;
 }
 
-.confirm-card__profile {
-	width: 40px;
-	height: 40px;
-	overflow: hidden;
-	border-radius: var(--borderRadius50);
-	margin-right: 8px;
-}
-
-.confirm-card__profile img {
-	object-fit: cover;
-	object-position: center;
-}
-
-.confirm-card__nickname {
+.confirm-vote__info h5 {
 	font-size: 17px;
-	font-weight: 600;
-	color: var(--white);
+	font-weight: 700;	
+	color: var(--gray8);
 }
 
-.confirm-card__date {
+.confirm-vote__info svg { 
+	margin-right: 4px; 
+}
+
+.confirm-vote__date { 
 	font-size: 13px;
 	font-weight: 400;
 	color: var(--gray9);
+	margin-left: 12px; 
 }
 
-.confirm-card__date span {
+.confirm-vote__date span { 
 	font-size: 12px;
 	font-weight: 400;
 	color: var(--gray6);
 	margin-left: 4px;
 }
 
-.confirm-card__content {
-	padding-top: 12px;
+.confirm-vote__list {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 44px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: 700;
+	border: 1px solid var(--gray8);
+	border-radius: var(--borderRadius10);
+}
+
+.confirm-vote__btns {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.confirm-vote__btns button + button {
+	margin-left: 20px;
+}
+
+.confirm-vote__submit {
+	color: var(--gray5);
+}
+
+.confirm-vote__result {
+	color: var(--gray8);
+}
+
+/* Images Slider */
+.confirm-slider {
+	position: relative;
+}
+
+.confirm-slider__item {
+	width: 375px;
+	height: 375px;
 	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+	border-radius: var(--borderRadius30);
+}
+
+.confirm-slider__item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* Swiper CSS */
+.confirm-slider .swiper-pagination {
+	top: auto;
+	bottom: 8px;
+}
+
+.confirm-slider .swiper-pagination-bullet-active {
+	background-color: var(--white);
+}
+
+.confirm-slider .swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+}
+
+/* Comments */
+.confirm-comments {
+	padding: 22px 16px;
+	background: var(--gray2);
+	border-radius: var(--borderRadius30);
+}
+
+.confirm-comments__info {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.confirm-comments__info span {
 	font-size: 14px;
 	font-weight: 400;
-	color: var(--gray9);
+	color: var(--gray5);
+}
+
+.confirm-comments__list {
+	margin-top: 11px;
+}
+
+.confirm-comments__item {
+	display: flex;
+	align-items: center;
+}
+
+.confirm-comments__profile {
+	width: 24px;
+	height: 24px;
+	background-color: var(--main);
+	border-radius: var(--borderRadius50);
+	overflow: hidden;
+}
+
+.confirm-comments__profile img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.confirm-comments__content {
+	width: calc(100% - 40px);
+	position: relative;
+	margin-left: 16px;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--gray8);
+}
+
+.confirm-comments__content:after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url('../../images/icon/confirm-comments-link.svg') no-repeat center / cover;
+	right: 0;
 }

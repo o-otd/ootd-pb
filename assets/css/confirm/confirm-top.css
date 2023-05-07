@@ -1,0 +1,21 @@
+.confirm-util {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 15px 25px;
+}
+
+.confirm-util button {
+	display: block;
+	height: 24px;
+}
+
+.confirm-util a {
+	margin-left: 24px;
+}
+
+.confirm-util__write { 
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--main);
+}
