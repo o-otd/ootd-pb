@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>오늘의 옷장</title>
+	<link rel="stylesheet" href="./assets/css/confirm/comment/style.css" />
+</head>
+<body>
+	<!-- 본문 바로가기 -->
+	<a href="#" class="skip">본문 바로가기</a>
+
+	<!-- <header class="header">
+		<div class="inner-container">
+			<div class="header-top">
+				<h1 class="header-logo"><a href="#">LOGO</a></h1>
+
+				<ul class="header-util">
+					<li><button type="button"><img src="./assets/images/icon/search.svg" alt="검색"></button></li>
+					<li><button type="button"><img src="./assets/images/icon/notice.svg" alt="알림" /></button></li>
+				</ul>
+			</div>
+
+			<nav class="header-nav">
+				<ul class="header-nav__lists">
+					<li class="header-nav__list active"><a href="#">오늘의 옷장</a></li>
+					<li class="header-nav__list"><a href="#">일주일 옷장</a></li>
+					<li class="header-nav__list"><a href="#">컨펌</a></li>
+					<li class="header-nav__list"><a href="#">MY</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header> -->
+	<!-- Header -->
+
+	<main>
+		<section class="comment-top">
+			<button type="button" class="comment-top__close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.68262 7.68359L16.3174 16.3184" stroke="#F2F2F7" stroke-width="2.5" stroke-linecap="round"/>
+					<path d="M16.3174 7.68359L7.68262 16.3184" stroke="#F2F2F7" stroke-width="2.5" stroke-linecap="round"/>
+				</svg>	
+			</button>
+			<div class="comment-top__title">댓글 <span>72</span></div>
+		</section>
+
+		<section class="comment-form confirm-marginTop">
+			<form>
+				<textarea placeholder="댓글을 입력하세요" class="comment-textarea"></textarea>
+				<div class="comment-input__util">
+					<div><span>0</span>/600</div>
+					<button class="comment-form__submit" disabled>댓글 남기기</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="comment-list confirm-marginTop">
+			<ul>
+				<li class="commnet-item">
+					<div class="comment-list__profile"></div>
+					<div class="comment-list__info">
+						<div class="comment-list__nickname">닉네임</div>
+						<p class="comment-list__content">패턴이 너무 튀어요.</p>
+						<!-- 댓글 누르면 comment-list__util padding-bottom: 8px 추가 해야함. -->
+						<div class="comment-list__util">
+							<div class="comment-list__comments">댓글 <span>13</span></div>
+							<button class="comment-list__likes">
+								<span class="ir_so">좋아요</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" />
+								</svg>
+								<span>124</span>
+							</button>
+						</div>
+						<!-- 대댓글 -->
+						<div class="comments-list">
+							<ul class="comments-lists">
+								<li class="comments-item">
+									<div class="comments-item__width">
+										<div class="comments-list__info">
+											<div class="comments-list__title">XCVXVV</div>
+											<div class="comments-list__date">2022.11.27. 14:27</div>
+										</div>
+										<p class="comments-list__contents">공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...</p>
+									</div>
+									<button type="button" class="comments-list__more">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="6" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="12" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="18" cy="12" r="1.5" fill="#9E9EA3"/>
+										</svg>								
+									</button>
+								</li>
+								<li class="comments-item">
+									<div class="comments-list__info">
+										<div class="comments-list__title">XCVXVV</div>
+										<div class="comments-list__date">2022.11.27. 14:27</div>
+									</div>
+									<p class="comments-list__contents">공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...</p>
+									<button type="button" class="comments-list__more">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="6" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="12" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="18" cy="12" r="1.5" fill="#9E9EA3"/>
+										</svg>								
+									</button>
+									<!-- 더 보기: 답댓글 -->
+									<ul class="comments-more__list">
+										<li class="comments-more__item">답댓글</li>
+									</ul>
+								</li>
+								<li class="comments-item">
+									<div class="comments-list__info">
+										<div class="comments-list__title">XCVXVV</div>
+										<div class="comments-list__date">2022.11.27. 14:27</div>
+									</div>
+									<p class="comments-list__contents">공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...공감합니다...</p>
+									<button type="button" class="comments-list__more">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="6" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="12" cy="12" r="1.5" fill="#9E9EA3"/>
+											<circle cx="18" cy="12" r="1.5" fill="#9E9EA3"/>
+										</svg>								
+									</button>
+									<!-- 더 보기: 답댓글 -->
+									<ul class="comments-more__list">
+										<li class="comments-more__item">수정</li>
+										<li class="comments-more__item comments-more__delete">삭제</li>
+									</ul>
+								</li>
+							</ul>
+							<form class="comments-form">
+								<div class="comments-form__flex">
+									<textarea class="comments-form__textarea" placeholder="댓글을 입력하세요"></textarea>
+									<button class="comments-form__submit" disabled>댓글 남기기</button>
+								</div>
+							</form>
+						</div>
+
+						<div class="comment-list__date">2022.11.27. 14:27</div>
+					</div>
+				</li>
+				<li class="commnet-item">
+					<div class="comment-list__profile"></div>
+					<div class="comment-list__info">
+						<div class="comment-list__nickname">닉네임</div>
+						<p class="comment-list__content">패턴이 너무 튀어요. 패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.</p>
+						<div class="comment-list__util">
+							<div class="comment-list__comments">댓글 <span>13</span></div>
+							<button class="comment-list__likes">
+								<span class="ir_so">좋아요</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" />
+								</svg>
+								<span>124</span>
+							</button>
+						</div>
+						<div class="comment-list__date">2022.11.27. 14:27</div>
+					</div>
+				</li>
+				<li class="commnet-item">
+					<div class="comment-list__profile"></div>
+					<div class="comment-list__info">
+						<div class="comment-list__nickname">닉네임</div>
+						<p class="comment-list__content">패턴이 너무 튀어요. 패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.패턴이 너무 튀어요.</p>
+						<div class="comment-list__util">
+							<div class="comment-list__comments">댓글 <span>13</span></div>
+							<button class="comment-list__likes">
+								<span class="ir_so">좋아요</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.8375 3.99292C16.378 3.53018 15.8316 3.16283 15.2297 2.91199C14.6277 2.66114 13.9821 2.53175 13.33 2.53125C12.0965 2.53145 10.9081 2.99481 10 3.82958C9.09203 2.99467 7.90353 2.53129 6.67002 2.53125C6.01714 2.53193 5.37084 2.66172 4.76831 2.91314C4.16577 3.16456 3.61891 3.53266 3.15919 3.99625C1.19836 5.96542 1.19919 9.04542 3.16086 11.0063L10 17.8454L16.8392 11.0063C18.8009 9.04542 18.8017 5.96542 16.8375 3.99292Z" />
+								</svg>
+								<span>124</span>
+							</button>
+						</div>
+						<div class="comment-list__date">2022.11.27. 14:27</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

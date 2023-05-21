@@ -1,0 +1,85 @@
+/* comment-list */
+.comment-list {
+	padding: 22px 16px;
+	background-color: var(--gray2);
+	border-radius: var(--borderRadius20);
+}
+
+.commnet-item {
+	display: flex;
+	border-bottom: 1px solid var(--gray5);
+	padding-bottom: 20px;
+}
+
+.commnet-item + .commnet-item {
+	margin-top: 16px;
+}
+
+.comment-list__profile {
+	width: 24px;
+	height: 24px;
+	border-radius: var(--borderRadius50);
+	background-color: var(--gray8);
+}
+
+.comment-list__info {
+	width: calc(100% - 40px);
+	font-size: 14px;
+	margin-left: 16px;
+}
+
+.comment-list__nickname {
+	font-weight: 500;
+	color: var(--white);
+}
+
+.comment-list__content {
+	font-weight: 400;
+	color: var(--gray8);
+	margin-top: 4px;
+}
+
+.comment-list__util {
+	font-size: 13px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+	/* 댓글 눌렀을 때 8px 추가 해야함. */
+	padding-bottom: 8px;
+}
+
+.comment-list__comments {
+	color: var(--white);
+}
+
+.comment-list__comments span {
+	margin-left: 4px;
+	color: var(--gray7);
+}
+
+.comment-list__likes {
+	display: flex;
+	align-items: center;
+	margin-left: 16px;
+}
+
+.comment-list__likes svg {
+	fill: var(--gray5);
+}
+
+/* 좋아요 버튼을 눌렀으면 */
+/* .comment-list__likes svg {
+	fill: var(--tint1);
+} */
+
+.comment-list__likes span {
+	margin-left: 4px;
+}
+
+.comment-list__date {
+	color: var(--gray6);
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 8px;
+}

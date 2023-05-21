@@ -1,0 +1,49 @@
+/* comment-form */
+.comment-form {
+	padding: 22px 16px 20px 16px;
+	background-color: var(--gray2); 
+	border-radius: var(--borderRadius20);
+}
+
+.comment-textarea {
+	display: block;
+	padding: 16px;
+	width: 100%;
+	height: 103px;
+	resize: none;
+	border-radius: var(--borderRadius10);
+	background-color: var(--gray2); 
+	border: 1px solid var(--gray5);
+	font-weight: 400;
+	color: var(--gray8);
+	font-size: 14px;
+}
+
+.comment-textarea::placeholder {
+	font-weight: 400;
+	color: var(--gray5);
+}
+
+.comment-input__util {
+	margin-top: 11px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--gray5);
+}
+
+.comment-form__submit {
+	margin-left: 23px;
+	background-color: var(--gray8); 
+	border-radius: var(--borderRadius10);
+	font-weight: 600;
+	font-size: 14px;
+	padding: 10px 12px;
+	color: var(--gray2);
+}
+
+.comment-form__submit:disabled {
+	background-color: var(--gray5); 
+}

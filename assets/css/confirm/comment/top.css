@@ -1,0 +1,26 @@
+/* comment-top */
+.comment-top { 
+	display: flex;
+	align-items: center;
+	background-color: var(--gray3); 
+	height: 55px; 
+	border-radius: var(--headerRadius30);
+	padding: 0 16px;
+}
+
+.comment-top__close {
+	height: 24px;
+}
+
+.comment-top__title { 
+	margin-left: 12px;
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--gray9);
+}
+
+.comment-top__title span {
+	margin-left: 6px;
+	font-weight: 400;
+	color: var(--gray5);
+}

@@ -1,0 +1,112 @@
+/* 대댓글 */
+.comments-list {
+	padding-top: 8px;
+	border-top: 1px solid var(--gray5);
+}
+
+.comments-item {
+	position: relative;
+}
+
+.comments-item + .comments-item {
+	margin-top: 12px;
+}
+
+.comments-item__width {
+	width: calc(100% - 24px);
+}
+
+.comments-list__info {
+	display: flex;
+	align-items: center;
+}
+
+.comments-list__title {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.comments-list__date {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--gray6);
+	margin-left: 8px;
+}
+
+.comments-list__contents {
+	margin-top: 4px;
+	font-size: 14px;
+	color: var(--gray8);
+	font-weight: 400;
+}
+
+.comments-list__more {
+	position: absolute;
+	right: 0;
+	top: 0; 
+}
+
+.comments-form {
+	margin-top: 16px;
+}
+
+.comments-form__flex {
+	display: flex;
+}
+
+.comments-form__textarea {
+	width: calc(100% - 86px);
+	padding: 8px 16px;
+	background-color: var(--gray2);
+	border: 1px solid var(--gray5);
+	border-radius: var(--borderRadius10);
+	resize: none;
+	font-size: 14px;
+	height: 34px;font-weight: 400;
+	color: var(--gray8);
+	font-size: 14px;
+}
+
+.comments-form__textarea::placeholder {
+	font-weight: 400;
+	color: var(--gray5);
+}
+
+.comments-form__submit {
+	margin-left: 8px;
+	background-color: var(--gray8); 
+	border-radius: var(--borderRadius10);
+	font-weight: 600;
+	font-size: 13px;
+	padding: 8px 10px;
+	color: var(--gray2);
+}
+
+.comments-form__submit:disabled {
+	background-color: var(--gray5); 
+}
+
+/* 더 보기: 답댓글 */
+.comments-more__list {
+	position: absolute;
+	top: 26px;
+	right: 0;
+	width: 81px;
+	background-color: var(--white);
+	border-radius: var(--borderRadius5);
+}
+
+.comments-more__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 36px;
+	color: var(--gray1);
+	font-weight: 500;
+	font-size: 13px;
+}
+
+.comments-more__delete {
+	color: var(--tint1);
+}
