@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>오늘의 옷장</title>
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/confirm/write/style.css" />
+</head>
+<body>
+	<!-- 본문 바로가기 -->
+	<a href="#" class="skip">본문 바로가기</a>
+
+	<!-- <header class="header">
+		<div class="inner-container">
+			<div class="header-top">
+				<h1 class="header-logo"><a href="#">LOGO</a></h1>
+
+				<ul class="header-util">
+					<li><button type="button"><img src="./assets/images/icon/search.svg" alt="검색"></button></li>
+					<li><button type="button"><img src="./assets/images/icon/notice.svg" alt="알림" /></button></li>
+				</ul>
+			</div>
+
+			<nav class="header-nav">
+				<ul class="header-nav__lists">
+					<li class="header-nav__list active"><a href="#">오늘의 옷장</a></li>
+					<li class="header-nav__list"><a href="#">일주일 옷장</a></li>
+					<li class="header-nav__list"><a href="#">컨펌</a></li>
+					<li class="header-nav__list"><a href="#">MY</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header> -->
+	<!-- Header -->
+	<main>
+		<section class="write-top">
+			<button type="button" class="write-top__close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.68262 7.68359L16.3174 16.3184" stroke="#F2F2F7" stroke-width="2.5" stroke-linecap="round"/>
+					<path d="M16.3174 7.68359L7.68262 16.3184" stroke="#F2F2F7" stroke-width="2.5" stroke-linecap="round"/>
+				</svg>	
+			</button>
+			<div class="write-top__title">컨펌 글쓰기</div>
+			<div class="write-top__submit">글쓰기 작성 완료</div>
+		</section>
+		
+		<section class="write-desc confirm-marginTop">
+			<div class="write-desc__header">
+				<div class="write-desc__profile"></div>
+				<div class="write-desc__info">
+					<div class="write-desc__nickname">CNVXCX</div>
+					<div class="write-desc__date">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4.66699 7.33398H6.00033V8.66732H4.66699V7.33398ZM4.66699 10.0007H6.00033V11.334H4.66699V10.0007ZM7.33366 7.33398H8.66699V8.66732H7.33366V7.33398ZM7.33366 10.0007H8.66699V11.334H7.33366V10.0007ZM10.0003 7.33398H11.3337V8.66732H10.0003V7.33398ZM10.0003 10.0007H11.3337V11.334H10.0003V10.0007Z" fill="#62626C"/>
+							<path d="M3.33333 14.6673H12.6667C13.402 14.6673 14 14.0693 14 13.334V4.00065C14 3.26532 13.402 2.66732 12.6667 2.66732H11.3333V1.33398H10V2.66732H6V1.33398H4.66667V2.66732H3.33333C2.598 2.66732 2 3.26532 2 4.00065V13.334C2 14.0693 2.598 14.6673 3.33333 14.6673ZM12.6667 5.33398L12.6673 13.334H3.33333V5.33398H12.6667Z" fill="#62626C"/>
+						</svg>
+						<div class="write-desc__input">
+							<input type="text" value="2022.11.27"/>
+							<span>~</span>
+							<input type="text" value="2022.12.04"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<textarea class="write-desc__textarea" placeholder="텍스트를 입력하세요"></textarea>
+		</section>
+
+		<section class="write-vote confirm-marginTop">
+			<div class="write-vote__header">
+				<div class="write-vote__title">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.3388 6.83849L13.1605 5.66016L9.16632 9.65432L7.25548 7.74349L6.07715 8.92182L9.16632 12.011L14.3388 6.83849Z" fill="#D9D9D9"/>
+						<path d="M16.667 1.66602H3.33366C2.41449 1.66602 1.66699 2.41352 1.66699 3.33268V18.3327L6.11116 14.9993H16.667C17.5862 14.9993 18.3337 14.2518 18.3337 13.3327V3.33268C18.3337 2.41352 17.5862 1.66602 16.667 1.66602ZM16.667 13.3327H5.55616L3.33366 14.9993V3.33268H16.667V13.3327Z" fill="#D9D9D9"/>
+					</svg>
+					<div>PICK</div>	
+				</div>
+				<div class="write-vote__date">
+					<div class="write-vote__date-remain">7일 남음</div>
+					<div class="write-vote__date-period">2022.11.27 ~ 2022.12.04</div>
+				</div>
+			</div>
+			<div class="write-bote__select">
+				<div class="write-bote__input">
+					<input type="text" placeholder="선택 1" />
+				</div>
+				<div class="write-bote__input">
+					<input type="text" placeholder="선택 1" />
+				</div>
+			</div>
+		</section>
+
+		<section class="write-slider confirm-marginTop">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<input type="file" id="image-1"/>
+					<label for="image-1">
+						<div>이미지를 등록하세요.</div>
+						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="50" height="50" rx="25" fill="#62626C"/>
+							<path d="M32 24H26V18H24V24H18V26H24V32H26V26H32V24Z" fill="#9E9EA3"/>
+						</svg>	
+					</label>
+				</div>
+				<div class="swiper-slide">
+					<input type="file" id="image-1"/>
+					<label for="image-1">
+						<div>이미지를 등록하세요.</div>
+						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="50" height="50" rx="25" fill="#62626C"/>
+							<path d="M32 24H26V18H24V24H18V26H24V32H26V26H32V24Z" fill="#9E9EA3"/>
+						</svg>	
+					</label>
+				</div>
+				<div class="swiper-slide">
+					<input type="file" id="image-1"/>
+					<label for="image-1">
+						<div>이미지를 등록하세요.</div>
+						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="50" height="50" rx="25" fill="#62626C"/>
+							<path d="M32 24H26V18H24V24H18V26H24V32H26V26H32V24Z" fill="#9E9EA3"/>
+						</svg>	
+					</label>
+				</div>
+				<div class="swiper-slide">
+					<input type="file" id="image-1"/>
+					<label for="image-1">
+						<div>이미지를 등록하세요.</div>
+						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="50" height="50" rx="25" fill="#62626C"/>
+							<path d="M32 24H26V18H24V24H18V26H24V32H26V26H32V24Z" fill="#9E9EA3"/>
+						</svg>	
+					</label>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="./assets/js/confirm/confirmWrite.js"></script>
+</body>
+</html>

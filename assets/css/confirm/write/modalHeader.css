@@ -1,0 +1,29 @@
+.write-top { 
+	display: flex;
+	align-items: center;
+	background-color: var(--gray3); 
+	height: 55px; 
+	border-radius: var(--headerRadius30);
+	padding: 0 16px;
+}
+
+.write-top__close {
+	height: 24px;
+}
+
+.write-top__title { 
+	margin-left: 12px;
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--gray9);
+}
+
+.write-top__submit {
+	margin-left: auto;
+	color: #17171B;
+	background-color: var(--gray7);
+	border-radius: var(--borderRadius50);
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 500;
+}
