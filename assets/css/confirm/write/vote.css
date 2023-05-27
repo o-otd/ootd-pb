@@ -1,0 +1,69 @@
+/* ! write-vote */
+.write-vote {
+	padding: 22px 16px 20px 16px;
+	background-color: var(--gray2); 
+	border-radius: var(--borderRadius20);
+}
+
+.write-vote__header {
+	display: flex;
+	align-items: center;
+}
+
+.write-vote__title {
+	display: flex;
+	align-items: center;
+}
+
+.write-vote__title div {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--gray8);
+	margin-left: 4px;
+}
+
+.write-vote__date {
+	display: flex;
+	align-items: center;
+	margin-left: 12px;
+}
+
+.write-vote__date-remain {
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--gray9);
+	margin-right: 4px;
+}
+
+.write-vote__date-period {
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--gray6);
+}
+
+.write-bote__input {
+	width: 100%;
+	height: 44px;
+	background-color: var(--gray3);
+	border-radius: var(--borderRadius10);
+	margin-top: 12px;
+}
+
+.write-bote__input input {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	padding: 13px 16px;
+	border-radius: var(--borderRadius10);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.write-bote__input input:focus {
+	border: 1px solid var(--main);
+	outline: none;
+}
+
+.write-bote__input + .write-bote__input {
+	margin-top: 4px;
+}
