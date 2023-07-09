@@ -3,6 +3,12 @@
 @import url('./form.css');
 @import url('./vote.css');
 @import url('./imageSlider.css');
+@import url('./calender.css');
+
+main {
+	display: none;
+}
+
 
 .confirm-marginTop {
 	margin-top: 4px;

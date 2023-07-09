@@ -1,0 +1,104 @@
+/* Calender */
+.calender {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* Calender Background */
+.calender-backdrop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.83);
+}
+
+/* Calender Content */
+.calender-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - (16 * 2px));
+	height: 381px;
+	border-radius: var(--borderRadius14);
+	background-color: var(--gray2);
+	padding: 27px 16px 0 16px;
+}
+
+/* Calender Header */
+.calender-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.calender-header__year {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.calender-header__year button {
+	margin-left: 8px;
+}
+
+.calender-header__control button + button {
+	margin-left: 30px;
+}
+
+/* Calender Body */
+.calender-body__day {
+	display: flex; 
+	justify-content: space-between;
+	margin-top: 13px;
+}
+
+.calender-body__day li {
+	font-size: 13px;
+	color: rgba(235, 235, 245, 0.3);
+}
+
+.calender-body__date {
+	/* display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; */
+	display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 4px;
+	text-align: center;
+}
+
+.calender-body__date li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+.calender-form {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 44px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(84, 84, 88, 0.65);
+}
+
+.calender-form button {
+	flex: 1;
+	text-align: center;
+	height: 100%;
+}
+
+.calender-form button:first-of-type {
+	border-right: 1px solid rgba(84, 84, 88, 0.65);
+}
