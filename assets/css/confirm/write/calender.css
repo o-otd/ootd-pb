@@ -64,9 +64,6 @@
 }
 
 .calender-body__date {
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between; */
 	display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-gap: 4px;
@@ -74,11 +71,26 @@
 }
 
 .calender-body__date li {
+	width: 40px;
+	height: 40px;
+}
+
+.calender-body__date li.selected {
+	background-color: var(--main);
+	border-radius: var(--borderRadius50);
+	color: var(--gray1)
+}
+
+.calender-body__date li button {
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 40px;
-	height: 40px;
+}
+
+.calender-body__date li button:disabled {
+	color: var(--gray3);
 }
 
 .calender-form {
