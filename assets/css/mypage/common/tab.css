@@ -1,0 +1,39 @@
+.mypage-tab {
+	display: flex;
+	margin-top: 10px;
+	overflow-x: scroll;
+}
+
+.mypage-tab::-webkit-scrollbar {
+	display: none;
+}
+
+.mypage-tab li {
+	flex-shrink: 0;
+	height: 34px;
+}
+
+.mypage-tab li + li {
+	margin-left: 5px;
+}
+
+.mypage-tab li button {
+	width: 100%;
+	height: 100%;
+	padding: 16px 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+
+.mypage-tab li button span {
+	position: relative;
+}
+
+.mypage-tab li.active button {
+	color: var(--main);
+	font-weight: 700;
+	position: relative;
+	text-decoration: underline;
+}

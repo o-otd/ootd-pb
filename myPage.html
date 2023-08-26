@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>오늘의 옷장 -마이페이지-</title>
+	<link rel="stylesheet" href="./assets/css/mypage/mypage.css" />
+</head>
+<body>
+	<!-- 본문 바로가기 -->
+	<a href="#" class="skip">본문 바로가기</a>
+
+	<header class="header">
+		<div class="inner-container">
+			<div class="header-top">
+				<h1 class="header-logo"><a href="#">LOGO</a></h1>
+
+				<ul class="header-util">
+					<li><button type="button"><img src="./assets/images/icon/search.svg" alt="검색"></button></li>
+					<li><button type="button"><img src="./assets/images/icon/notice.svg" alt="알림" /></button></li>
+				</ul>
+			</div>
+			<!-- Header Top -->
+
+			<nav class="header-nav">
+				<ul class="header-nav__lists">
+					<li class="header-nav__list active"><a href="#">오늘의 옷장</a></li>
+					<li class="header-nav__list"><a href="#">일주일 옷장</a></li>
+					<li class="header-nav__list"><a href="#">컨펌</a></li>
+					<li class="header-nav__list"><a href="#">MY</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+	<!-- Header -->
+
+	<main>
+		<section class="mypage-card mypage-marginTop mypage-box">
+			<div class="mypage-image">
+				<img src="./assets/images/myPage/mypage-image-duumy-profile.png" alt="내 프로필" />
+				<label class="mypage-image__add" for="mypage-image__add">
+					<img src="./assets/images/myPage/mypage-image-add.png" alt="이미지 변경하기" />
+				</label>
+				<input type="file" id="mypage-image__add" />
+			</div>
+			<div>
+				<h3 class="mypage-name">CNVXCX</h3>
+				<div class="mypage-info">
+					<div class="mypage-following mypage-info__text"><b>234</b>팔로잉</div>
+					<div class="mypage-follower mypage-info__text"><b>14</b>팔로워</div>
+				</div>
+			</div>
+		</section>
+		<!-- 프로필 카드 -->
+		<!-- <section class="ootd-card mypage-marginTop">
+			<div class="ootd-card"></div>
+		</section> -->
+		<!-- 오늘의 옷장 카드 -->
+
+		<section class="mypage-likes mypage-marginTop mypage-box__link">
+			<a href="#">
+				<h4 class="mypage-title">좋아요</h4>
+				<span>123</span>
+				<button>
+					<img src="./assets/images/myPage/arrow-right-07.png" alt="좋아요 이동하기" />
+				</button>
+			</a>
+		</section>
+		<!-- 좋아요 -->
+		<section class="mypage-bookmark mypage-marginTop mypage-box__link">
+			<a href="#">
+				<h4 class="mypage-title">북마크</h4>
+				<span>3,245</span>
+				<button>
+					<img src="./assets/images/myPage/arrow-right-07.png" alt="북마크 이동하기" />
+				</button>
+			</a>
+		</section>
+		<!-- 북마크 -->
+		<section class="mypage-confirm mypage-marginTop mypage-box__link">
+			<a href="#">
+				<h4 class="mypage-title">내가 작성한 컨펌</h4>
+				<span>0</span>
+				<button>
+					<img src="./assets/images/myPage/arrow-right-07.png" alt="내가 작성한 컨펌 이동하기" />
+				</button>
+			</a>
+		</section>
+		<!-- 내가 작성한 컨펌 -->
+		<section class="mypage-comments mypage-marginTop mypage-box__link">
+			<a href="#">
+				<h4 class="mypage-title">내가 작성한 댓글</h4>
+				<span>1</span>
+				<button>
+					<img src="./assets/images/myPage/arrow-right-07.png" alt="내가 작성한 댓글 이동하기" />
+				</button>
+			</a>
+		</section>
+		<!-- 내가 작성한 댓글 -->
+	</main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@import url("../common/header.css");
+
+.mypage-marginTop {
+	margin-top: 4px;
+}
+
+.mypage-box {
+	border-radius: var(--borderRadius30);
+	background-color: var(--gray3);
+	padding: 23px 16px;
+}
+
+.mypage-box__link {
+	border-radius: var(--borderRadius30);
+	background-color: var(--gray3);
+}
+
+.mypage-card {
+	display: flex;
+	align-items: center;
+}
+
+.mypage-image {
+	position: relative;
+	width: 56px;
+	height: 56px;
+	border-radius: var(--borderRadius50);
+	background-color: yellow;
+}
+
+.mypage-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.mypage-image input {
+	display: none;
+}
+
+.mypage-image__add {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+
+.mypage-image__add img {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--borderRadius50);
+}
+
+.mypage-image + div {
+	margin-left: 12px;
+}
+
+.mypage-name {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.mypage-info {
+	display: flex;
+	margin-top: 4px;
+}
+
+.mypage-info__text {
+	font-size: 14px;
+	color: var(--gray7);
+	font-weight: 400;
+}
+
+.mypage-info__text b {
+	font-size: 16px;
+	color: var(--white);
+	font-weight: 600;
+	margin-right: 2px;
+}
+
+.mypage-info__text + .mypage-info__text {
+	margin-left: 12px;
+}
+
+.mypage-box__link a {
+	display: flex;
+	align-items: center;
+	padding: 23px 16px;
+	position: relative;
+}
+
+.mypage-box__link h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--white);
+	margin-right: 13px;
+}
+
+.mypage-box__link span {
+	font-weight: 700;
+	color: var(--main);
+}
+
+.mypage-box__link button {
+	position: absolute;
+	right: 16px;
+	width: 24px;
+	height: 24px;
+}
+
+.mypage-box__link button img {
+	width: 100%;
+	height: 100%;
+}

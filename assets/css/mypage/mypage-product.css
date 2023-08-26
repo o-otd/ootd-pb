@@ -1,0 +1,65 @@
+@import url("../common/header.css");
+@import url('./common/tab.css');
+@import url('./common/top.css');
+@import url('../main/modal.css');
+
+.mypage-list {
+	margin-top: 14px;
+}
+
+.mypage-list ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 4px;
+}
+
+.mypage-list ul li {
+	overflow: hidden;
+	border-radius: var(--borderRadius30);
+}
+
+.mypage-list ul li a { 
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.mypage-list__image {
+	position: relative;
+}
+
+.mypage-list__image img {
+	width: 100%;
+	height: 100%; 
+	object-fit: cover;
+	object-position: center;
+}
+
+.mypage-product {
+	width: 104px;
+	height: 33px;
+	margin-left: auto;
+	background-color: var(--gray5);
+	border-radius: 4px;
+	margin-bottom: 24px;
+}
+
+.mypage-product > button {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mypage-product h3 {
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.mypage-product img {
+	width: 16px;
+	height: 16px;
+	display: block;
+	margin-left: 8px;
+}

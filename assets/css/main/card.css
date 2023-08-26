@@ -27,7 +27,7 @@
 .card-header__util { display: flex; }
 .card-header__util li { position: relative; }
 .card-header__util li + li { margin-left: 8px; }
-.card-header__util li .unflow { 
+.card-header__util li .unfollow { 
 	position: absolute;
 	padding: 8px 16px;
 	width: max-content;
@@ -41,7 +41,7 @@
 	display: flex;
 	align-items: center;
 }
-.card-header__util li .unflow svg { margin-left: 10px; }
+.card-header__util li .unfollow svg { margin-left: 10px; }
 
 /* ***************************************************** */
 /* ***************************************************** */

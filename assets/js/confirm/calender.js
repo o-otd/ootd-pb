@@ -15,16 +15,11 @@ const monthObject = {
 
 
 class Calender {
-	#currentYear;
-	#currentMonth;
-	#rootElem;
-	#date;
-
 	constructor({ rootElem, date }){
-		this.#rootElem = rootElem;
-		this.#date = date;
-		this.#currentMonth = date.getMonth() + 1
-		this.#currentYear = date.getFullYear();
+		this.rootElem = rootElem;
+		this.date = date;
+		this.currentMonth = date.getMonth() + 1
+		this.currentYear = date.getFullYear();
 
 		this.render(date);
 		this.eventHandler();
@@ -35,8 +30,6 @@ class Calender {
 	}
 
 	datePrint(date){
-		console.log(date)
-
 		let dateHTML = '';
 
 		const adjDate = new Date(date).getDate();
@@ -52,8 +45,8 @@ class Calender {
 		}
 	
 		for (let i = 1; i <= lastDay; i++) {
-			if(this.#currentMonth > month) dateHTML += `<li><button disabled>${i}</button></li>`;
-			if(this.#currentMonth <= month && this.#currentYear >= year){
+			if(this.currentMonth > month) dateHTML += `<li><button disabled>${i}</button></li>`;
+			if(this.currentMonth <= month && this.currentYear >= year){
 				const isDisabled = adjDate > i ? "disabled" : ''
 				dateHTML += `<li class="calender-body__dayList"><button ${isDisabled}>${i}</button></li>`;
 			}
@@ -76,7 +69,7 @@ class Calender {
 	eventHandler(){
 		let selected;
 
-		this.#rootElem.addEventListener('click', (event) => {
+		this.rootElem.addEventListener('click', (event) => {
 
 			if(event.target.closest('.calender-body__dayList')){
 				selected && selected.classList.remove('selected')
@@ -85,15 +78,33 @@ class Calender {
 			}
 
 			if(event.target.closest('.calender-prev__btn')){
-				this.render(new Date(this.#date.setMonth(this.#date.getMonth() - 1)));
+				this.render(new Date(this.date.setMonth(this.date.getMonth() - 1)));
 			}
 
 			if(event.target.closest('.calender-next__btn')){
-				this.render(new Date(this.#date.setMonth(this.#date.getMonth() + 1)));
+				this.render(new Date(this.date.setMonth(this.date.getMonth() + 1)));
 			}
-
 		})
 	}
+
+	// addEvent(eventType, selector, callback){
+	// 	this.rootElem.addEventListener(eventType, (event) => {
+	// 		if(!event.target.closest(selector)) return
+	// 		callback(event)
+	// 	})
+	// }
+
+	// prevCalenderHandler(){
+	// 	this.addEvent('click', '.calender-prev__btn', () => {
+	// 		this.render(new Date(this.date.setMonth(this.date.getMonth() - 1)));
+	// 	})
+	// }
+
+	// nextCalenderHandler(){
+	// 	this.addEvent('click', '.calender-prev__btn', () => {
+	// 		this.render(new Date(this.date.setMonth(this.date.getMonth() + 1)));
+	// 	})
+	// }
 }
 
 new Calender({

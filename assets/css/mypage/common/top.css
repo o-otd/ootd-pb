@@ -1,0 +1,21 @@
+.mypage-header {
+	padding: 0 10px;
+	margin-top: 24px;
+}
+
+.mypage-header a {
+	display: flex;
+}
+
+.mypage-header h3 {
+	margin-left: 10px;
+}
+
+.mypage-header button {
+	width: 20px;
+	height: 20px;
+}
+
+.mypage-header button img {
+	width: 100%;
+}

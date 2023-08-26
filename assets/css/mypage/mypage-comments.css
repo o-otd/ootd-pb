@@ -1,0 +1,59 @@
+@import url("../common/header.css");
+@import url('./common/tab.css');
+@import url('./common/top.css');
+
+.mypage-list {
+	margin-top: 14px;
+}
+
+.mypage-list ul li + li {
+	margin-top: 4px;
+}
+
+.mypage-list ul li a { 
+	display: block;
+	width: 100%;
+	border-radius: var(--borderRadius20);
+	overflow: hidden;
+	padding: 22px 16px;
+	background-color: var(--gray2);
+}
+
+.mypage-list ul li h3 {
+	margin-bottom: 10px;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.mypage-list ul li h3 strong {
+	font-weight: 700;
+	margin-right: 7px;
+}
+
+.mypage-list ul li a > div {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.mypage-list ul li a > div:after {
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: url('../../images/myPage/arrow-right-07.png') no-repeat center / cover;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.mypage-list__profile {
+	width: 24px;
+	height: 24px;
+	background-color: gray;
+	border-radius: var(--borderRadius50);
+}
+
+.mypage-list__comment {
+	margin-left: 16px;
+}
